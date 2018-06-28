@@ -1,32 +1,39 @@
-# qd-cli
+# hpack-cli
 
-> qd-cli支持生成种子项目，开发，与输出生产环境的代码
+> hpack-cli支持生成种子项目，开发，与输出生产环境的代码
 
 ### 安装
-```
-npm i qd-clis -g
+
+```s
+npm i @schacker/hpack-cli -g
 or
-yarn global add qd-clis
+yarn global add @schacker/hpack-cli
 ```
+
 > window平台请使用管理员权限安装，mac平台请在命令前面加上sudo
 
 如果你不想全局安装的话
-```
-git clone git@github.com:nwa2018/qd-cli.git
-cd qd-cli
+
+```s
+git clone git@github.com:schacker/hpack-cli.git
+cd hpack-cli
 npm i / yarn
 npm link
 ```
+
 ### 使用
+
+```s
+hpack -v  输出版本号
+hpack     命令集
+hpack i   生成种子文件
+hpack d   开发
+hpack b   构建
 ```
-qd -v  输出版本号
-qd     命令集
-qd i   生成种子文件
-qd d   开发
-qd b   构建
-```
+
 ### 特性
-- qd-cli内置了vue,vuex,vue-router,axios,jsonp,ramda,jquery,无需二次安装
+
+- hpack-cli内置了vue,vuex,vue-router,axios,jsonp,ramda,jquery,无需二次安装
 - 支持es6语法，支持async,await,支持装饰器
 - eslint采用standard规范
 - 支持pug语法，stylus, scss
@@ -36,7 +43,8 @@ qd b   构建
 - 生产环境支持代码分割，懒加载，打哈希串
 
 ### 目录结构
-```
+
+```s
 + vue-project
 +   src
 -     index.js
@@ -46,12 +54,11 @@ qd b   构建
 ```
 
 ### 开发
-先生成种子文件，再开发
-```
-qd i
-cd projectName
-qd d
-```
 
-### issue
-- 抽取出的css哈希串会跟js的一样，不利于浏览器做缓存
+先生成种子文件，再开发
+
+```s
+hpack i
+cd projectName
+hpack d
+```

@@ -1,8 +1,11 @@
 {
-  "name": "hpack-cli",
+  "name": "@schacker/hpack-cli",
   "version": "0.0.1",
   "main": "bin/cli.js",
-  "repository": "git@github.com:schacker/hpack-cli.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/schacker/hpack-cli.git"
+  },
   "author": "1039407128lgx@gmail.com",
   "license": "MIT",
   "bin": {
@@ -82,5 +85,23 @@
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
-  }
+  },
+  "description": "> hpack-cli支持生成种子项目，开发，与输出生产环境的代码",
+  "bugs": {
+    "url": "https://github.com/schacker/hpack-cli/issues"
+  },
+  "homepage": "https://github.com/schacker/hpack-cli#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "vue",
+    "react",
+    "build"
+  ]
 }
