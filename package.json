@@ -1,6 +1,6 @@
 {
   "name": "@schacker/hpack-cli",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "main": "bin/cli.js",
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@
  * @Author: huangwei@lianjia.com 
  * @Date: 2018-06-28 10:20:00 
  * @Last Modified by: huangwei@lianjia.com
- * @Last Modified time: 2018-07-09 15:09:47
+ * @Last Modified time: 2018-07-10 09:47:22
  * 工具命令集合
  */
 
@@ -20,14 +20,13 @@ program.version(version, '-v, --version')
 program.command('init').alias('i').action(cmd => {
   cmdInit(cmd)
 })
-program.command('dev <cmd>').alias('d').action(cmd => {
+program.command('dev').option('-q, --quiet', '开启静默信息').alias('d').action(cmd => {
   cmdDev(process.argv)
 })
 program.command('build').alias('b').action(cmd => {
   cmdBuild(cmd)
 })
 
-console.log(process.argv)
 program.parse(process.argv)
 
 if (program.args.length < 1) cmdPrompt()

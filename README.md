@@ -33,7 +33,7 @@ hpack b   构建
 
 ### 特性
 
-- hpack-cli内置了vue,vuex,vue-router,axios,jsonp,ramda,jquery,无需二次安装
+- hpack-cli内置了axios,jsonp,ramda,jquery,无需二次安装
 - 支持es6语法，支持async,await,支持装饰器
 - eslint采用standard规范
 - 支持pug语法，stylus, scss
