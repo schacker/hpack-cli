@@ -60,5 +60,6 @@ hpack b   构建
 ```s
 hpack i
 cd projectName
+npm i
 hpack d
 ```
