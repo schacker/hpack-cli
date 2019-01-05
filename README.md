@@ -1,6 +1,6 @@
 # hpack-cli
 
-> hpack-cli支持生成模板项目，开发，与输出生产环境的代码
+> `hpack-cli`支持生成(react or vue)模板项目，开发，与输出生产环境的代码
 
 ### 安装
 
@@ -45,7 +45,7 @@ hpack b   构建
 ### 目录结构
 
 ```s
-+ vue-project
++ react-project
 +   src
 -     index.js
     index.art       // 每一个xxx.art对应src目录的xxx.js，开发多页应用只需要增加这两个文件
