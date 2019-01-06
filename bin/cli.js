@@ -3,7 +3,7 @@
  * @Author: huangwei@lianjia.com 
  * @Date: 2018-06-28 10:20:00 
  * @Last Modified by: huangwei@lianjia.com
- * @Last Modified time: 2018-07-10 09:47:22
+ * @Last Modified time: 2019-01-06 19:45:42
  * 工具命令集合
  */
 
@@ -11,12 +11,20 @@ const program = require('commander');
 const cmdDev = require('../lib/command/dev');
 const cmdBuild = require('../lib/command/build');
 const cmdInit = require('../lib/command/init');
+const cmdCheckUpdate = require('../lib/command/checkUpdate');
+const cmdUpdate = require('../lib/command/update');
 const cmdPrompt = require('../lib/command/prompt');
 
 const version = require('../package').version
 
 program.version(version, '-v, --version')
 
+program.command('checkUpdate').alias('c').action(cmd => {
+  cmdCheckUpdate(cmd)
+})
+program.command('update').alias('u').action(cmd => {
+  cmdUpdate(cmd)
+})
 program.command('init').alias('i').action(cmd => {
   cmdInit(cmd)
 })

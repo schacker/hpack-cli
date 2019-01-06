@@ -1,3 +1,8 @@
+### 0.1.10
+
+1、变更种子项目`webpack`配置，分为`dev`、`test`、`prod`三种环境配置
+2、支持输出文件信息文件-`cdnResource.json`、`cdnResource.ini`
+
 ### 0.1.8
 
 1、支持`react`项目，`hpack i`根据提示选择相应类型项目

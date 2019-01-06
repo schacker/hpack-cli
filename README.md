@@ -26,6 +26,8 @@ npm link
 ```s
 hpack -v  输出版本号
 hpack     命令集
+hpack c   检查版本
+hpack u   版本升级
 hpack i   生成种子文件
 hpack d   开发
 hpack b   构建
@@ -33,14 +35,21 @@ hpack b   构建
 
 ### 特性
 
-- hpack-cli内置了axios,jsonp,ramda,jquery,无需二次安装
-- 支持es6语法，支持async,await,支持装饰器
-- eslint采用standard规范
-- 支持pug语法，stylus, scss
+- `hpack-cli` 内置了 `axios`, `jsonp`, `ramda`, `jquery`,无需二次安装
+- 支持 `es6` 语法，支持 `async`, `await`, 支持装饰器
+- `eslint` 采用 `standard` 规范
+- 支持 `pug` 语法，`stylus`, `scss`
 - 生产环境图片会自动压缩
 - 支持单页应用，多页应用，支持项目集结构
 - 支持少量的配置项
 - 生产环境支持代码分割，懒加载，打哈希串
+- 支持打包多个环境，主要是为了fix按需加载使用 `publicPath`
+
+  -如使用 `ENVIRONMENT=test hpack b`，则打包配置会读取`webpack/webpack.test.js`配置，如果相应环境没做配置，则使用默认的 `/` 路径
+  
+  -如使用 `ENVIRONMENT=production hpack b`，则打包配置会读取`webpack/webpack.prod.js`配置，如果相应环境没做配置，则使用默认的 `/` 路径
+
+  -打包后会在指定路径默认（`dist`）生成打包文件及文件信息，`cdnResource.json`,`cdnResource.ini`
 
 ### 目录结构
 

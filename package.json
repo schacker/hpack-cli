@@ -1,6 +1,6 @@
 {
   "name": "@schacker/hpack-cli",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "bin/cli.js",
   "repository": {
     "type": "git",
@@ -80,7 +80,6 @@
     "mini-css-extract-plugin": "^0.4.0",
     "mock-webpack-plugin": "^2.0.0",
     "next-tick": "^1.0.0",
-    "node-sass": "^4.9.0",
     "object.assign": "^4.1.0",
     "optimize-css-assets-webpack-plugin": "^4.0.1",
     "ora": "^3.0.0",
@@ -102,6 +101,7 @@
     "ramda": "^0.25.0",
     "react-transform-hmr": "^1.0.4",
     "read-file-stdin": "^0.2.1",
+    "request": "^2.88.0",
     "sass-loader": "^7.0.1",
     "sntp": "^3.0.1",
     "standard": "^11.0.1",
