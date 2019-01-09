@@ -1,3 +1,29 @@
+### 0.1.13
+
+1、线上配置`optimization`固定默认参数
+2、`UglifyjsPlugin`插件配置
+
+  ```js
+  {
+    uglifyOptions: {
+      ie8: false, //是否支持ie8，default-false
+      ecma: 8, //支持的ecma标准，default-undefined，parse、compress、output生效
+      compress: {
+        // 屏蔽警告
+        warnings: false,
+        // 去掉console
+        drop_console: true
+      },
+      output: {
+        comments: false //去掉注释
+      },
+      warnings: false //去掉警告
+    },
+    parallel: true, //允许并发，并发数为os.cpus().length-1
+    sourceMap: true
+  }
+  ```
+
 ### 0.1.12
 
 1、fix: CDNPlugin插件build文件报读取文件错误
