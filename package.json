@@ -1,6 +1,6 @@
 {
   "name": "@schacker/hpack-cli",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "main": "bin/cli.js",
   "repository": {
     "type": "git",
@@ -12,10 +12,15 @@
     "hpack": "./bin/cli.js"
   },
   "dependencies": {
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router-dom": "^4.3.1",
     "@webpack-contrib/schema-utils": "^1.0.0-beta.0",
     "argh": "^0.1.4",
     "art-template": "^4.12.2",
     "art-template-loader": "^1.4.3",
+    "awesome-typescript-loader": "^5.2.1",
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
@@ -110,6 +115,7 @@
     "style-loader": "^0.21.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "typescript": "^3.1.6",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "url-join": "^4.0.0",
     "url-loader": "^1.0.1",
