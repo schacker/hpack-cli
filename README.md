@@ -1,6 +1,6 @@
 # hpack-cli
 
-> `hpack-cli`支持生成(react or vue)模板项目，开发，与输出生产环境的代码
+> `hpack-cli`支持生成(react or vue or react-ts)模板项目，开发，与输出生产环境的代码
 
 ### 安装
 
@@ -20,6 +20,8 @@ cd hpack-cli
 npm i / yarn
 npm link
 ```
+
+安装过程中如果报`fsevents`模块相关错误，请重新安装即可~
 
 ### 使用
 
