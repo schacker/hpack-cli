@@ -1,3 +1,7 @@
+### 0.1.17
+
+1、支持`react-ts-redux`组合
+
 ### 0.1.16
 
 1、默认开启 `historyApiFallback: true`，当使用`HTML5 history API`时，任何`404`都替换为`index.html`即当前 `/` 路由，当然你也可以自定义devServer，如
