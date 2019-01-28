@@ -1,6 +1,6 @@
 # hpack-cli
 
-> `hpack-cli`支持生成(react or vue or react-ts)模板项目，开发，与输出生产环境的代码
+> `hpack-cli`支持生成(vue or react or react-ts or react-redux or react-ts-redux)模板项目，开发，与输出生产环境的代码
 
 ### 安装
 
