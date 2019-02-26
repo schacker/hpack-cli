@@ -3,7 +3,7 @@
  * @Author: huangwei@lianjia.com 
  * @Date: 2018-06-28 10:20:00 
  * @Last Modified by: huangwei@lianjia.com
- * @Last Modified time: 2019-01-06 19:45:42
+ * @Last Modified time: 2019-02-15 15:29:12
  * 工具命令集合
  */
 
@@ -31,7 +31,7 @@ program.command('init').alias('i').action(cmd => {
 program.command('dev').option('-q, --quiet', '开启静默信息').alias('d').action(cmd => {
   cmdDev(process.argv)
 })
-program.command('build').alias('b').action(cmd => {
+program.command('build').option('-m, --mini, MINI小程序打包模式').alias('b').action(cmd => {
   cmdBuild(cmd)
 })
 
