@@ -1,3 +1,7 @@
+### 0.2.0
+- 升级`webpack`到`webpack5`
+- 升级`babel`到版本`7`
+- `fix` 部分兼容问题
 ### 0.1.18
 
 1、支持`react-redux`组合
