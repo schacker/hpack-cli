@@ -150,5 +150,8 @@
     "vue",
     "react",
     "build"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
